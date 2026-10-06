@@ -7,10 +7,10 @@ var builder = FunctionsApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
-builder.ConfigureFunctionsWebApplication();
+//builder.ConfigureFunctionsWebApplication();
 
-builder.Services
-    .AddApplicationInsightsTelemetryWorkerService()
-    .ConfigureFunctionsApplicationInsights();
+//builder.Services
+    //.AddApplicationInsightsTelemetryWorkerService()
+    //.ConfigureFunctionsApplicationInsights();
 
 builder.Build().Run();
